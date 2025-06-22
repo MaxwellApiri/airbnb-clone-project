@@ -190,6 +190,43 @@ Users can search for properties by location, date, price, and type. Filtering im
 An administrative interface for managing users, listings, and reviewing flagged content. Helps ensure platform quality and security.
 
 
+## 🔐 API Security
+
+To ensure the safety and reliability of the backend services, several key security measures will be implemented:
+
+### 1. Authentication
+We use JWT (JSON Web Tokens) to verify user identity. This prevents unauthorized users from accessing protected routes and data.
+
+### 2. Authorization
+Role-based access control ensures that only permitted users can perform certain actions. For example, only hosts can list properties, and only admins can delete reviews.
+
+### 3. Rate Limiting
+Rate limiting prevents abuse of the API by limiting the number of requests a user can make in a given time window. This is useful for protecting against brute-force attacks and service overloads.
+
+### 4. Data Validation and Sanitization
+All incoming data is validated and sanitized to prevent SQL/NoSQL injection, XSS (cross-site scripting), and other malicious inputs.
+
+### Why Security is Crucial:
+- **Protecting User Data:** Prevents leaks of personal and sensitive information.
+- **Securing Payments:** Ensures that financial transactions are handled securely to protect both users and the platform.
+- **Maintaining Platform Trust:** A secure app builds user confidence and protects your reputation.
+
+---
+
+## 🔁 CI/CD Pipeline
+
+### What is CI/CD?
+CI/CD stands for **Continuous Integration** and **Continuous Deployment**. It refers to the practice of automatically building, testing, and deploying code whenever new changes are pushed to the codebase.
+
+### Why It's Important:
+- **Faster Delivery:** Enables frequent updates with confidence, reducing manual work.
+- **Error Detection:** Catches bugs early in development through automated testing.
+- **Consistency:** Ensures that the deployment process is the same every time, reducing human error.
+
+### Tools Used:
+- **GitHub Actions:** Automates testing and deployment directly from GitHub.
+- **Docker:** Containerizes the application, ensuring it runs the same in development and production.
+- **Render / Railway / Vercel / Netlify:** Platforms for automatic deployment and hosting.
 
 © 2025 ALX, All rights reserved.
 
