@@ -166,6 +166,30 @@ CI/CD (Continuous Integration / Continuous Deployment) automates the testing and
 - **Render / Vercel / Netlify / Railway**: For deployment and hosting.
 
 ---
+## 🔧 Feature Breakdown
+
+### 1. User Management
+Handles user registration, login, and authentication. Supports different user roles (guests and hosts) to allow personalized access and actions within the app.
+
+### 2. Property Management
+Allows hosts to list new properties with details such as title, description, location, images, price, and availability. Hosts can edit or delete their listings and manage them through a dashboard.
+
+### 3. Booking System
+Enables guests to browse available properties and make bookings for selected dates. Automatically prevents double-booking and ensures date validation.
+
+### 4. Review System
+Guests can rate and review properties after their stay. Reviews help future guests make informed decisions and provide feedback to hosts.
+
+### 5. Payment Integration
+Processes booking payments securely using integrated payment services (e.g., Stripe). Ensures transactions are tracked and linked to users and bookings.
+
+### 6. Search and Filtering
+Users can search for properties by location, date, price, and type. Filtering improves the user experience by narrowing down relevant results.
+
+### 7. Admin Panel (Optional)
+An administrative interface for managing users, listings, and reviewing flagged content. Helps ensure platform quality and security.
+
+
 
 © 2025 ALX, All rights reserved.
 
